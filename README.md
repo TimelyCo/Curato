@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Curato
 
-## Getting Started
+This project is a feature-rich, fully responsive frontend application called Nexora — a personalized content dashboard designed to deliver a seamless, interactive user experience. Built using Next.js, TypeScript, Redux Toolkit, and Tailwind CSS, the application empowers users to curate and interact with content such as news articles, movie/music recommendations, and social media posts — all in one unified interface.
 
-First, run the development server:
+Users can customize their content preferences (e.g., categories like technology, sports, or entertainment), and the dashboard dynamically fetches personalized data from external APIs such as NewsAPI, TMDB, and a mock social feed. The layout includes intuitive navigation via a sidebar and a top header with search functionality, user settings, and dark mode toggle.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Core features include:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Personalized Feed: Aggregates multi-source content based on user preferences.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Trending & Favorites Sections: Displays top content and allows users to save favorites.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Drag-and-Drop Support: Enables users to reorganize their feed interactively.
 
-## Learn More
+Search with Debounce: Allows category-wide content search with optimized performance.
 
-To learn more about Next.js, take a look at the following resources:
+Dark Mode: Smooth theme toggle using Tailwind CSS and local storage.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Animations: Polished UI with transitions and hover effects using Framer Motion.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app uses Redux Toolkit for global state management and RTK Query or Thunks for async data fetching. User preferences and session data are persisted with localStorage to ensure continuity across reloads. The project also includes unit, integration, and end-to-end tests using tools like Jest, React Testing Library, and Cypress to ensure robustness and user flow reliability.
